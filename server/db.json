@@ -1,0 +1,44 @@
+{
+  "employees": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "address": "123 Main St",
+      "phone": "555-555-5555",
+      "email": "johnDoe@gmail.com",
+      "salary": 1000,
+      "dni": "12345678A",
+      "yearOfBirth": 1990
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "address": "456 Elm St",
+      "phone": "555-555-5556",
+      "email": "janeSmith@gmail.com",
+      "salary": 1200,
+      "dni": "87654321B",
+      "yearOfBirth": 1985
+    },
+    {
+      "id": "3",
+      "name": "Alice Johnson",
+      "address": "789 Oak St",
+      "phone": "555-555-5557",
+      "email": "aliceJohnson@gmail.com",
+      "salary": 1100,
+      "dni": "23456789C",
+      "yearOfBirth": 1992
+    },
+    {
+      "id": "4",
+      "name": "Bob Brown",
+      "address": "321 Pine St",
+      "phone": "555-555-5558",
+      "email": "bobBrown@gmail.com",
+      "salary": 1300,
+      "dni": "34567890D",
+      "yearOfBirth": 1988
+    }
+  ]
+}

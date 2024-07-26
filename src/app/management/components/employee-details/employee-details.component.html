@@ -1,0 +1,41 @@
+<div class="grid place-content-center ">
+  @if (employeeId !== null){
+    <form class="example-form flex flex-col">
+      <mat-form-field class="example-full-width">
+        <mat-label> Id </mat-label>
+        <input matInput [value]="employeeData.id">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label> Name </mat-label>
+        <input matInput [value]="employeeData.name">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label> Address </mat-label>
+        <input matInput [value]="employeeData.address">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label> Phone </mat-label>
+        <input matInput [value]="employeeData.phone">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label> Email </mat-label>
+        <input matInput [value]="employeeData.email">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label> Dni </mat-label>
+        <input matInput [value]="employeeData.dni">
+      </mat-form-field>
+    </form>
+  }
+  @else{
+    <div class="grid place content-center">
+      <span> No data available </span>
+    </div>
+  }
+   <button class="bg-cyan-600 text-white w-20 p-2 rounded-lg ml-16 hover:cursor-pointer hover:scale-110" (click)="backToHomePage()"> Home </button>
+</div>
