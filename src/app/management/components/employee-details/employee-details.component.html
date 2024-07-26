@@ -1,4 +1,4 @@
-<div class="grid place-content-center ">
+<div class="flex justify-center flex-col items-center gap-10 ">
   @if (employeeId !== null){
     <form class="example-form flex flex-col">
       <mat-form-field class="example-full-width">
@@ -37,5 +37,5 @@
       <span> No data available </span>
     </div>
   }
-   <button class="bg-cyan-600 text-white w-20 p-2 rounded-lg ml-16 hover:cursor-pointer hover:scale-110" (click)="backToHomePage()"> Home </button>
+   <button class="bg-cyan-600 text-white w-20 p-2 rounded-lg hover:cursor-pointer hover:scale-110" (click)="backToHomePage()"> Home </button>
 </div>

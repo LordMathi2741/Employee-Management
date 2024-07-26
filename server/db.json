@@ -2,13 +2,13 @@
   "employees": [
     {
       "id": "1",
-      "name": "John Doe",
-      "address": "123 Main St",
-      "phone": "555-555-5555",
-      "email": "johnDoe@gmail.com",
-      "salary": 1000,
-      "dni": "12345678A",
-      "yearOfBirth": 1990
+      "name": "LordMathi2741",
+      "email": "holamundo@gmail.com",
+      "phone": "1212121",
+      "address": "Lima Peru",
+      "salary": "2000",
+      "dni": "11212",
+      "yearOfBirth": "2004"
     },
     {
       "id": "2",
@@ -39,6 +39,16 @@
       "salary": 1300,
       "dni": "34567890D",
       "yearOfBirth": 1988
+    },
+    {
+      "id": "5",
+      "name": "Charlie Davis",
+      "address": "654 Maple St",
+      "phone": "555-555-5559",
+      "email": "charlieDavis@gmail.com",
+      "salary": 1150,
+      "dni": "45678901E",
+      "yearOfBirth": 1991
     }
   ]
 }

@@ -1,0 +1,45 @@
+<div class="flex justify-center items-center flex-col gap-5 mt-10">
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Id</mat-label>
+      <input matInput placeholder="Please Give your identifier" [(ngModel)]="id" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Please Give your name" [(ngModel)]="name" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Address</mat-label>
+      <input matInput placeholder="Please Give your address" [(ngModel)]="address" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Phone</mat-label>
+      <input matInput placeholder="Please give your phone" [(ngModel)]="phone" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Please give your email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Salary</mat-label>
+      <input matInput placeholder="Please give your salary" [(ngModel)]="salary"[ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Dni</mat-label>
+      <input matInput placeholder="Plase give your dni" [(ngModel)]="dni" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>YearOfBirth</mat-label>
+      <input matInput placeholder="Please give your year of birth" [(ngModel)]="yearOfBirth" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+  </form>
+  <button (click)="updateEmployee()"  mat-flat-button color="warn">Update</button>
+</div>
+

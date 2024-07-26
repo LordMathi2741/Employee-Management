@@ -10,6 +10,7 @@ import {
   MatDialogContent,
   MatDialogTitle,
 } from '@angular/material/dialog';
+import {Router} from "@angular/router";
 
 /**
  * @title Dialog elements
@@ -38,12 +39,12 @@ export class DeleteEmployeeDialog {
 })
 export class DeleteEmployeeDialogComponent {
   employeeId: any;
-  constructor(private employeeService: EmployeeService) {
+  constructor(private employeeService: EmployeeService, private router:Router) {
     this.employeeId = sessionStorage.getItem('employeeId');
   }
   deleteEmployee() {
     this.employeeService.deleteEmployee(this.employeeId).subscribe(() => {
-      alert("Employee deleted successfully")
+      alert("Employee deleted successfully");
     });
   }
 

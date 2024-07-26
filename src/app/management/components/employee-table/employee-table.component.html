@@ -23,13 +23,21 @@
     </ng-container>
 
     <!-- Symbol Column -->
-    <ng-container matColumnDef="delete">
-      <th mat-header-cell *matHeaderCellDef> Delete </th>
-      <td mat-cell *matCellDef="let element"> 	<mat-icon class="hover:scale-110 hover:cursor-pointer hover:text-red-500" (click)="openDeleteEmployeeDialog(element.id)">delete</mat-icon> </td>
+    <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef> Action </th>
+      <td mat-cell *matCellDef="let element">
+        <mat-icon *ngIf="isAdminMode" class="hover:scale-110 hover:cursor-pointer hover:text-white" (click)="goToCreateEmployee()">add</mat-icon>
+        <mat-icon *ngIf="isEditMode" class="hover:scale-110 hover:cursor-pointer hover:text-purple-400" (click)="goToUpdateEmployee()">edit</mat-icon>
+        <mat-icon *ngIf="isDefaultMode" class="hover:scale-110 hover:cursor-pointer hover:text-red-500" (click)="openDeleteEmployeeDialog(element.id)">delete</mat-icon>
+      </td>
     </ng-container>
+
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
-
+  <div class="flex justify-center gap-10 mt-10">
+    <button mat-flat-button (click)="adminMode()" color="warn" >Add Employee</button>
+    <button mat-flat-button (click)="editMode()" color="accent">Edit Employee</button>
+  </div>
 </div>

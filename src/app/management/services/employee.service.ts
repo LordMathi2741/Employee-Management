@@ -12,7 +12,7 @@ export class EmployeeService {
   getEmployees() {
     return this.baseService.get('employees');
   }
-  getEmployee(id: number) {
+  getEmployee(id: string) {
     return this.baseService.get('employees' + '/' + id);
   }
   deleteEmployee(id: number) {

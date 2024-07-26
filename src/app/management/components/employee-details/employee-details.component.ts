@@ -28,11 +28,16 @@ export class EmployeeDetailsComponent implements OnInit{
   }
   backToHomePage(){
     this.router.navigate(['/']);
+    this.removeCurrentEmployeeId();
   }
   getEmployeeData(){
     this.employeeService.getEmployee(this.employeeId).subscribe((data: any) => {
           this.employeeData = data;
     });
+  }
+
+  removeCurrentEmployeeId(){
+    sessionStorage.removeItem('employeeId');
   }
 
   ngOnInit() {

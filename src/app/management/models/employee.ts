@@ -19,5 +19,5 @@ export class Employee {
     this.yearOfBirth = yearOfBirth;
   }
 
-  public static _instance: Employee;
+  public static readonly _instance: Employee;
 }
