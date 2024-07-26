@@ -42,13 +42,13 @@
     },
     {
       "id": "5",
-      "name": "Charlie Davis",
-      "address": "654 Maple St",
-      "phone": "555-555-5559",
-      "email": "charlieDavis@gmail.com",
-      "salary": 1150,
-      "dni": "45678901E",
-      "yearOfBirth": 1991
+      "name": "Gustavo",
+      "email": "gustavo@gmail.com",
+      "phone": "21312312",
+      "address": "Lima Peru",
+      "salary": "2000",
+      "dni": "121212",
+      "yearOfBirth": "2005"
     }
   ]
 }

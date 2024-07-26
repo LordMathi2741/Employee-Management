@@ -105,7 +105,9 @@ export class EmployeeTableComponent implements OnInit{
     this.router.navigate(['/create-employee']);
   }
 
-  goToUpdateEmployee() {
+  goToUpdateEmployee(employeeId: number) {
     this.router.navigate(['/update-employee']);
+    sessionStorage.setItem('employeeId', employeeId.toString());
+
   }
 }

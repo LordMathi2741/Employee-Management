@@ -22,7 +22,7 @@ import {Router} from "@angular/router";
 })
 export class UpdateEmployeeComponent {
 
-  id:number = 0;
+  id:any = sessionStorage.getItem('employeeId');
   name:string = '';
   email:string = '';
   phone:string = '';
@@ -52,6 +52,7 @@ export class UpdateEmployeeComponent {
       },this.id).subscribe(() => {
         alert('Employee updated successfully');
         this.router.navigate(['/'])
+        sessionStorage.removeItem('employeeId');
       });
     }
     else{
